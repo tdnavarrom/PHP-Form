@@ -24,7 +24,7 @@ $sql = insert_data($_POST['name'], $_POST['lastname'], $_POST['email']);
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: Could not create entry";
  }
 
 ?> 
